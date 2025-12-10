@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@source "../../node_modules/@nina/ui/src/**.tsx";
+
+@utility text-balance {
+	text-wrap: balance;
+}
+
+@utility tab-4 {
+	tab-size: 4;
+}
+
+@theme {
+	/* start of font-family */
+	--font-accent: "Sono", ui-sans-serif, system-ui;
+	--font-default: "Sono", ui-sans-serif, system-ui;
+	/* end of font-family */
+
+	--color-current: currentColor;
+	--color-foreground: hsl(var(--foreground));
+
+	--charcoal-blue: oklch(34.64% 0.0425 236.81);
+	--pumpkin-spice: oklch(73.06% 0.1782 48.69);
+	--golden-pollen: oklch(86.09% 0.1532 87.29);
+	--muted-olive: oklch(77.14% 0.0937 129.94);
+	--seagrass: oklch(64.44% 0.0664 173.58);
+
+	/* Flags game palette */
+	--color-charcoal-blue-100: oklch(15.01% 0.0107 233.13);
+	--color-charcoal-blue-200: oklch(20.28% 0.0203 239.55);
+	--color-charcoal-blue-300: oklch(25.46% 0.0275 234.01);
+	--color-charcoal-blue-400: oklch(30.11% 0.0346 234.64);
+	--color-charcoal-blue-500: oklch(34.64% 0.0425 236.81);
+	--color-charcoal-blue-600: oklch(49.70% 0.0652 237.03);
+	--color-charcoal-blue-700: oklch(63.57% 0.0769 237.34);
+	--color-charcoal-blue-800: oklch(75.77% 0.0511 236.38);
+	--color-charcoal-blue-900: oklch(88.13% 0.0246 234.46);
+	--color-charcoal-blue: var(--color-charcoal-blue-500);
+
+	--color-pumpkin-spice-100: oklch(25.87% 0.067 51.41);
+	--color-pumpkin-spice-200: oklch(40.49% 0.1131 46);
+	--color-pumpkin-spice-300: oklch(53.89% 0.1552 44.41);
+	--color-pumpkin-spice-400: oklch(66.65% 0.1939 43.92);
+	--color-pumpkin-spice-500: oklch(73.06% 0.1782 48.69);
+	--color-pumpkin-spice-600: oklch(77.93% 0.1437 52.71);
+	--color-pumpkin-spice-700: oklch(82.89% 0.1083 54.69);
+	--color-pumpkin-spice-800: oklch(88.39% 0.0718 55.01);
+	--color-pumpkin-spice-900: oklch(94.07% 0.0357 56.46);
+	--color-pumpkin-spice: var(--color-pumpkin-spice-500);
+
+	--color-pollen-100: oklch(31.47% 0.0635 87.72);
+	--color-pollen-200: oklch(50.03% 0.1021 83.44);
+	--color-pollen-300: oklch(67.06% 0.1373 82.98);
+	--color-pollen-400: oklch(82.67% 0.1692 82.94);
+	--color-pollen-500: oklch(86.09% 0.1532 87.29);
+	--color-pollen-600: oklch(88.86% 0.1336 89.63);
+	--color-pollen-700: oklch(91.32% 0.1052 90.47);
+	--color-pollen-800: oklch(94.05% 0.0714 89.8);
+	--color-pollen-900: oklch(97.02% 0.0366 91.69);
+	--color-pollen: var(--color-pollen-500);
+
+	--color-olive-100: oklch(27.2% 0.0411 130.39);
+	--color-olive-200: oklch(42.34% 0.0726 130.74);
+	--color-olive-300: oklch(56.22% 0.0998 131.1);
+	--color-olive-400: oklch(69.35% 0.1247 130.89);
+	--color-olive-500: oklch(77.14% 0.0937 129.94);
+	--color-olive-600: oklch(81.65% 0.0742 129.17);
+	--color-olive-700: oklch(86.31% 0.0568 129.7);
+	--color-olive-800: oklch(90.81% 0.0374 128.93);
+	--color-olive-900: oklch(95.53% 0.0187 130.18);
+	--color-olive: var(--color-olive-500);
+
+	--color-seagrass-100: oklch(22.64% 0.0187 171.89);
+	--color-seagrass-200: oklch(33.88% 0.0308 176.18);
+	--color-seagrass-300: oklch(44.54% 0.0431 173.78);
+	--color-seagrass-400: oklch(54.53% 0.0554 172.92);
+	--color-seagrass-500: oklch(64.44% 0.0664 173.58);
+	--color-seagrass-600: oklch(71.57% 0.0551 174.7);
+	--color-seagrass-700: oklch(78.77% 0.0416 174.67);
+	--color-seagrass-800: oklch(85.93% 0.0274 176.23);
+	--color-seagrass-900: oklch(92.99% 0.0138 174.15);
+	--color-seagrass: var(--color-seagrass-500);
+
+	/* Accent palette */
+	--color-porcelain: oklch(96.6% 0.0093 99.98);
+	--color-marigold: oklch(89.64% 0.1514 93.21);
+	--color-inkwell: oklch(16.64% 0.0185 103.09);
+	--color-skywave: oklch(80.54% 0.0985 234.89);
+	--color-lilac-haze: oklch(72.17% 0.1539 288.29);
+	--color-tidepool: oklch(58.67% 0.1095 176.19);
+	--color-petal-glow: oklch(87.18% 0.1066 332.19);
+	--color-rose-pepper: oklch(71.14% 0.1566 21.83);
+
+	/* Base aliases */
+	--color-accent: var(--color-pumpkin-spice-500);
+	--color-light: var(--color-pollen-900);
+	--color-latte: var(--color-pollen-900);
+	--color-orange: var(--color-pumpkin-spice-400);
+	--color-sunglow: var(--color-pollen-600);
+	--color-pink: var(--color-pumpkin-spice-700);
+	--color-emerald: var(--color-seagrass-500);
+	--color-black: oklch(14.48% 0 89.88);
+	--color-white-smoke: var(--color-pollen-800);
+
+	--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+	--ease-in-out: cubic-bezier(0.84, 0, 0.16, 1);
+
+	--ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+	--ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+	--ease-enter: cubic-bezier(0, 0.5, 0.5, 1);
+	--ease-move: cubic-bezier(0, 0.5, 0.5, 1);
+	--ease-exit: cubic-bezier(0.5, 0, 0, 1);
+
+	--spacing-1_5: calc(var(--spacing) * 1.5);
+	--spacing-2_5: calc(var(--spacing) * 2.5);
+	--spacing-3: calc(var(--spacing) * 3);
+	--spacing-3_5: calc(var(--spacing) * 3.5);
+}
+
+body {
+	text-wrap-style: pretty;
+	text-rendering: optimizeLegibility;
+	@apply font-default;
+}
