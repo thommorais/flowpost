@@ -41,3 +41,7 @@ pb_data/
 .env*.local
 
 CLAUDE.md
+
+dist
+dist-ssr
+*.local
