@@ -1,5 +1,5 @@
 {
-  "name": "@nina/web-app",
+  "name": "@flowpost/web-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
-    "@nina/ui": "workspace:*",
+    "@flowpost/ui": "workspace:*",
     "@radix-ui/react-dialog": "^1.1.10",
     "@radix-ui/react-popover": "^1.1.10",
     "@radix-ui/react-scroll-area": "^1.2.2",
@@ -42,7 +42,7 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@nina/typescript-config": "workspace:*",
+    "@flowpost/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.0.3",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/animejs": "^3.1.13",

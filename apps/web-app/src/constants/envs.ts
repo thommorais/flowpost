@@ -45,9 +45,8 @@ const createEnvs = (parsed: MergedSafeParseReturn): Record<ServerEnvsKeys, strin
 const clientSchema = z.object({
 	NODE_ENV: z.enum(['development', 'test', 'production']),
 	NEXT_PUBLIC_WEBAPP_URL: z.string().url().default('https://localhost:3000'),
-	NEXT_PUBLIC_SITE_NAME: z.string().default('Nina'),
+	NEXT_PUBLIC_SITE_NAME: z.string().default('flowpost'),
 	WEBAPP_URL: z.string().url().default('https://localhost:3000'),
-	// NEXT_PUBLIC_API_URL: z.string().url().default('https://api.nina.place'),
 })
 
 // Client-side env vars are also available on the server

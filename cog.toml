@@ -9,7 +9,7 @@ tag_prefix = "v"
 path = "CHANGELOG.md"
 template = "remote"
 remote = "github.com"
-repository = "nina"
+repository = "flowpost"
 owner = "thommorais"
 
 [commit_types]

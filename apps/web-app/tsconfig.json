@@ -1,5 +1,5 @@
 {
-	"extends": "@nina/typescript-config/nextjs.json",
+	"extends": "@flowpost/typescript-config/nextjs.json",
 	"compilerOptions": {
 		"target": "ES2017",
 		"lib": ["dom", "dom.iterable", "esnext"],

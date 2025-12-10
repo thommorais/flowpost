@@ -1,4 +1,4 @@
-import { IconSprites } from '@nina/ui/icon'
+import { IconSprites } from '@flowpost/ui/icon'
 import { LocaleSwitcher } from '_/components/features/locale-switcher'
 import { LocaleProviders } from '_/components/providers/locale-providers'
 import { HTML } from '_/components/ui/html'

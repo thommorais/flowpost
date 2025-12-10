@@ -6,7 +6,7 @@
 path = "CHANGELOG.md"
 template = "remote"
 remote = "github.com"
-repository = "nina"
+repository = "flowpost"
 owner = "thommorais"
 
 # Git hooks configuration

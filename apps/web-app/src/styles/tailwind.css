@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@source "../../node_modules/@nina/ui/src/**.tsx";
+@source "../../node_modules/@flowpost/ui/src/**.tsx";
 
 @utility text-balance {
 	text-wrap: balance;

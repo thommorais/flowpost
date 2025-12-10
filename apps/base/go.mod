@@ -1,4 +1,4 @@
-module nina
+module flowpost
 
 go 1.24.2
 

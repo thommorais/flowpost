@@ -1,5 +1,5 @@
 {
-	"extends": "@nina/typescript-config/react-library.json",
+	"extends": "@flowpost/typescript-config/react-library.json",
 	"compilerOptions": {
 		"resolveJsonModule": true,
 		"experimentalDecorators": true,
